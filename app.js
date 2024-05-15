@@ -61,3 +61,10 @@ function newElement() {
     }
 
 }
+
+//Add list on press enter key
+document.querySelector("#myInput").addEventListener('keypress', function (e) {
+    if (e.key === 'Enter') {
+        newElement();
+    }
+});
